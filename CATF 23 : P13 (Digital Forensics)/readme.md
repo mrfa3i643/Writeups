@@ -114,15 +114,33 @@ After that i run this script :
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/9.webp">
 
 
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/10.webp">
+
+
 The decrypted file its corrupted, so i edited the file by insert 8 bytes in the first line and delete the last 4 bytes to make it a valid “jpeg” file
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/10.webp">
+
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/11.webp">
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/12.webp">
 
 
 then i got the valid image:
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/12.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/13.webp">
+
+
+I used google lens and i found this place in “Dublin”
+
+
+<h2>Q2 Answer : Dublin</h2>
+
+
+```The flag : CATF{https://github.com/Cu713/Secr3t/commit/d3c2ff53863d0fcc6f55c79d0d6799d40ca92820_Dublin}```
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/14.webp">
