@@ -22,6 +22,9 @@ After that, I used <a href="https://www.autopsy.com/download/"> Autopsy </a> to 
 So the first thing I looked at was **Powershell history**.
 
 
+**Powershell history** Path :
+
+
 ```/Users/analyst/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt```
 
 
