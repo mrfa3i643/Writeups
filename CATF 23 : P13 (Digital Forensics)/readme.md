@@ -60,7 +60,7 @@ Using sherlock tool i was able to find this github repo
 I found a 3 commites :
 
 
-<a href="https://github.com/Cu713/Secr3t/commit/d3c2ff53863d0fcc6f55c79d0d6799d40ca92820?source=post_page-----7697a0f6edb7--------------------------------">Cu713/Secr3t@d3c2ff5</a>
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/7.webp">
 
 
 <h3>Q1 Answer:</h3>
@@ -69,7 +69,7 @@ I found a 3 commites :
 Encryption script :
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/7.webp">
+<a href="https://github.com/Cu713/Secr3t/commit/d3c2ff53863d0fcc6f55c79d0d6799d40ca92820?source=post_page-----7697a0f6edb7--------------------------------">Cu713/Secr3t@d3c2ff5</a>
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/8.webp">
