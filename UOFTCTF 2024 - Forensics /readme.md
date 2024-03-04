@@ -37,13 +37,13 @@ Here I found an interesting **PowerShell script (.ps1)**, so let’s take a look
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/4.webp">
 
 
-It’s an **XOR**, so we have the **key*8 and the **cipher text**. Let’s decode it.
+It’s an **XOR**, so we have the **key** and the **cipher text**. Let’s decode it.
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/5.webp">
 
 
-```flag1 : uoftctf{0dd_w4y_t0_run_pw5h}```
+```uoftctf{0dd_w4y_t0_run_pw5h}```
 <h1>Hourglass Challenge :</h1>
 
 
