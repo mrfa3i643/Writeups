@@ -1,3 +1,80 @@
+<h1>Hourglass Challenge :</h1>
+
+
+```No EDR agent once again, we imaged this workstation for you to find the evil !In this challenge, I used a simple way, and it’s useful to understand what the newest files are that were created or renamed by the users or attackers.```
+
+
+I recommend reading this article about the <a href="https://www.orionforensics.com/forensics-tools/ntfs-journal-viewer-jv/"> **NTFS $UsnJrnl** </a> file.
+
+
+NTFS **$UsnJrnl** Path :
+
+
+**$Extend\$USNJrnl**
+
+
+**$J** (where the most important data reside) and **$Max**.
+
+
+**$USNJrnl:** provides high-level monitoring of file and folder changes, such as creation, deletion, and renaming.
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/4.webp">
+
+
+extract the **$USNJrnl$J** file and use the <a href="https://ericzimmerman.github.io/#!index.md"> MFTCmd Eric Zimmerman tool> </a> to parse the file.
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/5.webp">
+
+
+then open the CSV file via the <a href="https://ericzimmerman.github.io/#!index.md"> Timeline Explorer Zimmerman tool </a>.
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/6.webp">
+
+
+Here we can see a new text file was created, **“New Text Document.txt.”** I used the **RenameOldname** to filter the **Update Reasons column** to find the old name of the text file before renaming it to the new name.
+
+
+So let’s see what the new name of the file is. Now I will use the **entry number** value as a filter, so let’s see what the “New **Text Document.txt”** file with the **entry number (111631)** was renamed to:
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/7.webp">
+
+
+**flag.txt** Path :
+
+
+It was renamed **flag.txt**, and it contains a fake flag.
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/8.webp">
+
+
+So let’s see the other one with **entry number 36441**, which was renamed to:
+
+
+**settings.txt** file Path :
+
+
+```/Windows/DiagTrack/Settings/settings.txt```
+
+
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/9.webp">
+
+
+I found this base64 in the file contents, and after decoding it, I got the flag:
+
+
+```sh
+echo "Ky0tCiB1b2Z0Y3Rme1Q0c0tfU2NoM0R1bDNyX0ZVTn0KKy0t" | base64 -d
++--
+ uoftctf{T4sK_Sch3Dul3r_FUN}
++--
+```
+
+----------------------------------------------------------
 <h1>No grep Challenge :</h1>
 
 
