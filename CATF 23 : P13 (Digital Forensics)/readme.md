@@ -141,7 +141,7 @@ I used google lens and i found this place in “Dublin”
 <h2>Q2 Answer : Dublin</h2>
 
 
-```The flag : CATF{https://github.com/Cu713/Secr3t/commit/d3c2ff53863d0fcc6f55c79d0d6799d40ca92820_Dublin}```
+```Final flag : CATF{https://github.com/Cu713/Secr3t/commit/d3c2ff53863d0fcc6f55c79d0d6799d40ca92820_Dublin}```
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/14.webp">
