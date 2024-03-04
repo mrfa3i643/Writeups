@@ -25,15 +25,19 @@ So the first thing I looked at was **Powershell history**.
 ```/Users/analyst/AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt```
 
 
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/3.webp">
+
+
 Here I found an interesting **PowerShell script (.ps1)**, so let’s take a look at the file contents.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/3.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/4.webp">
+
 
 It’s an **XOR**, so we have the **key*8 and the **cipher text**. Let’s decode it.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/4.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/5.webp">
 
 
 ```flag1 : uoftctf{0dd_w4y_t0_run_pw5h}```
@@ -58,19 +62,19 @@ NTFS **$UsnJrnl** Path :
 **$USNJrnl:** provides high-level monitoring of file and folder changes, such as creation, deletion, and renaming.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/5.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/6.webp">
 
 
 extract the **$USNJrnl$J** file and use the <a href="https://ericzimmerman.github.io/#!index.md"> MFTCmd Eric Zimmerman tool> </a> to parse the file.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/6.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/7.webp">
 
 
 then open the CSV file via the <a href="https://ericzimmerman.github.io/#!index.md"> Timeline Explorer Zimmerman tool </a>.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/7.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/8.webp">
 
 
 Here we can see a new text file was created, **“New Text Document.txt.”** I used the **RenameOldname** to filter the **Update Reasons column** to find the old name of the text file before renaming it to the new name.
@@ -79,7 +83,7 @@ Here we can see a new text file was created, **“New Text Document.txt.”** I 
 So let’s see what the new name of the file is. Now I will use the **entry number** value as a filter, so let’s see what the “New **Text Document.txt”** file with the **entry number (111631)** was renamed to:
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/8.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/9.webp">
 
 
 **flag.txt** Path :
@@ -88,7 +92,7 @@ So let’s see what the new name of the file is. Now I will use the **entry numb
 It was renamed **flag.txt**, and it contains a fake flag.
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/9.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/10.webp">
 
 
 So let’s see the other one with **entry number 36441**, which was renamed to:
@@ -100,7 +104,7 @@ So let’s see the other one with **entry number 36441**, which was renamed to:
 ```/Windows/DiagTrack/Settings/settings.txt```
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/10.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/11.webp">
 
 
 I found this base64 in the file contents, and after decoding it, I got the flag:
