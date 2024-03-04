@@ -72,6 +72,9 @@ Encryption script :
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/7.webp">
 
 
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/8.webp">
+
+
 I reversed this code
 
 
@@ -107,8 +110,6 @@ with open("dec", 'wb') as f:
 
 After that i run this script :
 
-
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/8.webp">
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/CATF%2023%20%3A%20P13%20(Digital%20Forensics)/img/9.webp">
