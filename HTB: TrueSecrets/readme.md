@@ -6,3 +6,4 @@ Solution:
 Step 1: I wanted to know what is the profile name provided within this memory:
 
 Step 2:I searched all of the mem files and I found this (backup_development.zip) it seems like an interesting file:
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/HTB%3A%20TrueSecrets/img/1.webp">
