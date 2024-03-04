@@ -92,6 +92,9 @@ So let’s see what the new name of the file is. Now I will use the **entry numb
 **flag.txt** Path :
 
 
+```/Users/analyst/Desktop/flag.txt.txt```
+
+
 It was renamed **flag.txt**, and it contains a fake flag.
 
 
@@ -101,13 +104,16 @@ It was renamed **flag.txt**, and it contains a fake flag.
 So let’s see the other one with **entry number 36441**, which was renamed to:
 
 
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/11.webp">
+
+
 **settings.txt** file Path :
 
 
 ```/Windows/DiagTrack/Settings/settings.txt```
 
 
-<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/11.webp">
+<img src="https://github.com/mrfa3i643/Writeups/blob/main/UOFTCTF%202024%20-%20Forensics%20/img/12.webp">
 
 
 I found this base64 in the file contents, and after decoding it, I got the flag:
