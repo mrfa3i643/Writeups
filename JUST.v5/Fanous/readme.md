@@ -11,7 +11,7 @@ Challenge Description
 
 Welcome to the first challenge of the "Fanous" digital forensics series. Your mission is to answer the following questions:
 
-Q1- What is the volume friendly name associated with the USB flash drive?
+Q1- What is the volume friendly name associated with USB flash drive?
 
 Q2- Determine the exact time when the USB flash drive was connected to Fanous's computer (HH:MM:SS-DD/MM/YYYY) in UTC
 
@@ -22,6 +22,9 @@ Assemble your findings into the flag format.
 Flag Format: JUST{A1_A2_A3}
 
 Flag Example: JUST{ExampleName_17:10:23-07/10/2023_ABCD0123456789}
+
+
+<h3>Solution:</h3>
 
 
 I used the USB forensics tracker tool that extracts USB device connection artifacts. We should extract the ```C:/Windows/System32/config/SYSTEM``` hive file and open it using the USB tracker tool. 
@@ -64,16 +67,25 @@ Assemble your findings into the flag format.
 Flag Format: JUST{A1_A2_A3}
 
 
+<h3>Solution:</h3>
+
+
 he downloaded "dControl.exe" that disables windows defender, to install a cracked game
+
+
+dControl.exe :
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/JUST.v5/Fanous/img/dControl.png">
 
 
+Cracked game :
+
+
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/JUST.v5/Fanous/img/game.png">
 
 
-first thing i thought that the cracked game was the malware but i was wrong then i noticed ```he presses the (SHIFT) key many times on his keyboard while he is playing the game``` so the first thing that came to my mind was sticky keys 
+first thing i thought that the cracked game was the malware but i was wrong then i noticed in the description ```he presses the (SHIFT) key many times on his keyboard while he is playing the game``` so the first thing that came to my mind was sticky keys 
 
 
 sticky keys executable path ```c:\windows\system32\sethc.exe``` 
