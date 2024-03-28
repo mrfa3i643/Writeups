@@ -37,7 +37,7 @@ here i found Mounted Device Serial Number (```AA000000000399```)
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/JUST.v5/Fanous/img/USBSTOR.png">
 
 
-so first connection time was ```2024-03-17 10:42:58```
+so first connection time was ```2024-03-17 19:42:58```
 
 
 <img src="https://github.com/mrfa3i643/Writeups/blob/main/JUST.v5/Fanous/img/name.png">
